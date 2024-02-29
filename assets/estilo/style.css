@@ -334,7 +334,7 @@ main {
     /* width: 100%; */
 }
 
-@media (max-width: 768px) {
+@media and (max-width: 768px) {
 
     ::-webkit-scrollbar {
         width: 0;
