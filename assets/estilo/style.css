@@ -334,8 +334,7 @@ main {
     /* width: 100%; */
 }
 
-@media and (max-width: 768px) {
-
+@media  (max-width: 768px) {
     ::-webkit-scrollbar {
         width: 0;
         height: 0;
@@ -442,4 +441,4 @@ main {
     #section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-valor-section-trufas {
         margin-right: 10px;
     }
-}
+} 
