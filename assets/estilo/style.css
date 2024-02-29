@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    width: 36px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #7D939F;
+  }
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dcdcdc;
+    /* margin-bottom: 10000px; */
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(138,43,226,1) 26%, rgba(160,32,240,1) 60%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+img {
+    width: 100px;
+    object-fit: cover;
+}
+
+main {
+    /* max-width: 1024px; */
+    margin: 0 auto;
+
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header .logo {
+    margin-left: 10px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    width: 0px;
+    top: 53px;
+    transition: all .5s;
+}
+
+.logo:hover::before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    width: 253px;
+    top: 53px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #fff;
+    transition: all .2s;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+    margin-top: 83px;
+}
+
+#section-inicio {
+    /* margin-top: 83px; */
+    margin: 0 auto;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.title-section-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section-inicio .h1-title-section-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 50px 50px 50px;
+    font-size: 4rem;
+}
+
+.h1-title-section-inicio .span02 {
+    font-size: 5.5rem;
+    position: relative;
+}
+
+.span02::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #8A2BE2;
+    border-radius: 5px;
+    width: 536.38px;
+    top: 105px;
+}
+
+.paragrafo-scetion-inicio {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    text-align: justify;
+    color: #3f0575;
+}
+
+#section01 {
+    background-color: #dcdcdc;
+    box-shadow: (0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#section-brigadeiros {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 70px 0px 70px 0px;
+    
+}
+
+#section-brigadeiros .title-section-brigadeiros .h1-title-section-brigadeiros {
+    padding: 10px 0 5px 0;
+    font-size: 2.2rem;
+    position: relative;
+    margin-left: 10px;
+}
+
+#section-brigadeiros .title-section-brigadeiros .h1-title-section-brigadeiros::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #8A2BE2;
+    border-radius: 5px;
+    width: 210px;
+    top: 60px;
+}
+
+#section-brigadeiros .cards-section-brigadeiros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros {
+    display: flex;
+    gap: 5px;
+    background-color: #fff;
+    height: 120px;
+    padding: 10px;
+    transition: all .5s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros:hover img {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros {
+    width: 100%;
+    margin-left: 5px;
+    display: grid;
+    grid-template-areas: "sabor sabor"
+                         "ingre valor";
+}
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros .span-sabor-section-brigadeiros {
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: sabor;
+} 
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros .span-ingrediente-section-brigadeiros {
+    color: #6b6b6b;
+    font-size: 12px;
+    grid-area: ingre;
+    max-width: 186px;
+    
+} 
+
+#section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros .span-valor-section-brigadeiros {
+    grid-area: valor;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    /* width: 100%; */
+    margin-right: 18px;
+}
+
+
+#section02 {
+    background: linear-gradient(90deg, rgba(138,43,226,1) 26%, rgba(160,32,240,1) 60%);
+}
+
+#section-trufas {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 70px 0px 70px 0px;
+}
+
+#section-trufas .title-section-trufas .h1-title-section-trufas {
+    padding: 10px 0 5px 0;
+    font-size: 2.2rem;
+    position: relative;
+    margin-left: 10px;
+}
+
+#section-trufas .title-section-trufas .h1-title-section-trufas::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #fff;
+    border-radius: 5px;
+    width: 118px;
+    top: 54px;
+}
+
+#section-trufas .cards-section-trufas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+#section-trufas .cards-section-trufas .card-trufas {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    height: 150px;
+    padding: 10px;
+    transition: all .5s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; /* 69 */
+}
+
+#section-trufas .cards-section-trufas .card-trufas img {
+    height: 100px;
+}
+
+
+#section-trufas .cards-section-trufas .card-trufas:hover img {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+#section-trufas .cards-section-trufas .card-trufas .card-description-trufas {
+    width: 100%;
+    margin-left: 5px;
+    display: grid;
+    grid-template-areas: "sabor sabor"
+                         "ingre valor";
+}
+
+#section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-sabor-section-trufas {
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: sabor;
+} 
+
+#section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-ingrediente-section-trufas {
+    color: #6b6b6b;
+    font-size: 12px;
+    grid-area: ingre;
+    max-width: 186px;
+} 
+
+#section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-valor-section-trufas {
+    grid-area: valor;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    /* width: 100%; */
+}
+
+@media (max-width: 480px) {
+
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    img {
+        transform: scale(.6);
+        width: 110px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-container .logo {
+        width: 100%;
+        margin: 0px 0px 20px 20px;
+    }
+
+    .menu {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-section-inicio .h1-title-section-inicio {
+        font-size: 2rem;
+        padding: 70px 0 70px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h1-title-section-inicio .span02 {
+        font-size: 3.2rem;
+    }
+
+    .span02::before {
+        content: "";
+        position: absolute;
+        border-bottom: 5px solid #8A2BE2;
+        border-radius: 5px;
+        width: 312.08px;
+        top: 60px;
+    }
+
+    .paragrafo-scetion-inicio {
+        max-width: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0px 40px 70px 40px;
+        text-align: justify;
+        color: #3f0575;
+    }
+
+    #section-brigadeiros .cards-section-brigadeiros {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros {
+        display: grid;
+        grid-template-areas: "sabor"
+                             "ingre"
+                             "valor";
+    }
+
+    #section-trufas .cards-section-trufas .card-trufas {
+        margin-bottom: 15px;
+    }
+
+    #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros:hover img {
+        transform: scale(0.8);
+    }
+
+    #section-trufas .cards-section-trufas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-trufas .cards-section-trufas .card-frutas {
+        height: 150px;
+    }
+
+    #section-trufas .cards-section-trufas .card-trufas .card-description-trufas {
+        width: 100%;
+        margin-left: 5px;
+        display: grid;
+        grid-template-areas: "sabor"
+                             "ingre"
+                             "valor";
+    }
+
+    #section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-valor-section-trufas {
+        margin-right: 10px;
+    }
+}
