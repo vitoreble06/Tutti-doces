@@ -396,7 +396,7 @@ header {
         padding: 10px;
         width: 100%;
         border: 1.5px solid #fff;
-        /* background: linear-gradient(270deg, rgba(255,182,193,1) 0%, rgba(240,128,128,1) 55%); */
+        background-color: #fff;
         border-radius: 16px;
         display: flex;
         justify-content: center;
