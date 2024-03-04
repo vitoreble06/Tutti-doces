@@ -24,9 +24,9 @@ ul {
 
 
 
-img {
-    width: 100px;
+img {    
     object-fit: cover;
+    transform: scale(0.8);
 }
 
 main {
@@ -106,11 +106,6 @@ header {
     font-size: 16px;
 }
 
-.menu a:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #fff;
-    transition: all .2s;
-}
   
 .nav-links li {
     margin-right: 20px;
@@ -230,17 +225,18 @@ header {
 }
 
 #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros {
+    cursor: pointer;
     display: flex;
     gap: 5px;
     background-color: #fff;
-    height: 120px;
+    height: 150px;
     padding: 10px;
     transition: all .5s;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros:hover img {
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: all .5s;
 }
 
@@ -256,6 +252,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     grid-area: sabor;
+    height: 30px;
 } 
 
 #section-brigadeiros .cards-section-brigadeiros .card-brigadeiros .card-description-brigadeiros .span-ingrediente-section-brigadeiros {
@@ -329,7 +326,7 @@ header {
 
 
 #section-trufas .cards-section-trufas .card-trufas:hover img {
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: all .5s;
 }
 
@@ -345,6 +342,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     grid-area: sabor;
+    height: 30px;
 } 
 
 #section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-ingrediente-section-trufas {
@@ -372,7 +370,8 @@ header {
 
     img {
         transform: scale(.6);
-        width: 110px;
+        width: 140px;
+        /* width: 0%; */
     }
 
     .menu {
