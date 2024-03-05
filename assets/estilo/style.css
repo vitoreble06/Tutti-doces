@@ -9,7 +9,6 @@
 
 body {
     background-color: #dcdcdc;
-    /* margin-bottom: 10000px; */
     
 }
 
@@ -30,7 +29,6 @@ img {
 }
 
 main {
-    /* max-width: 1024px; */
     margin: 0 auto;
 
 }
@@ -135,12 +133,10 @@ header {
 .main-container {
     display: flex;
     flex-direction: column;
-    /* gap: 24px; */
     margin-top: 83px;
 }
 
 #section-inicio {
-    /* margin-top: 83px; */
     margin: 0 auto;
     background-color: #fff;
     width: 100%;
@@ -220,7 +216,7 @@ header {
 #section-brigadeiros .cards-section-brigadeiros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 24px;
     padding: 16px;
 }
 
@@ -269,14 +265,11 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
     font-size: 20px;
-    font-weight: bold;
-    /* width: 100%; */
-    margin-right: 18px;
+    font-weight: bold;    margin-right: 18px;
 }
 
 
 #section02 {
-    /* background: linear-gradient(90deg, rgba(138,43,226,1) 26%, rgba(160,32,240,1) 60%); */
     background: linear-gradient(270deg, rgba(255,182,193,1) 0%, rgba(240,128,128,1) 55%);
 }
 
@@ -306,11 +299,12 @@ header {
 #section-trufas .cards-section-trufas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 24px;
     padding: 16px;
 }
 
 #section-trufas .cards-section-trufas .card-trufas {
+    cursor: pointer;
     display: flex;
     gap: 10px;
     background-color: #fff;
@@ -359,7 +353,184 @@ header {
     justify-content: flex-end;
     font-size: 20px;
     font-weight: bold;
-    /* width: 100%; */
+}
+
+#section03 {
+    background-color: #dcdcdc;
+    box-shadow: (0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#section-outros {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 70px 0px 70px 0px;
+    
+}
+
+#section-outros .title-section-outros .h1-title-section-outros {
+    padding: 10px 0 5px 0;
+    font-size: 2.2rem;
+    position: relative;
+    margin-left: 10px;
+    color: #000;
+}
+
+#section-outros .title-section-outros .h1-title-section-outros::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid rgba(240,128,128,1) ;
+    border-radius: 5px;
+    width: 123px;
+    top: 52px;
+}
+
+#section-outros .cards-section-outros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 16px;
+}
+
+#section-outros .cards-section-outros .card-outros {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    background-color: #fff;
+    height: 150px;
+    padding: 10px;
+    transition: all .5s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+#section-outros .cards-section-outros .card-outros:hover img {
+    transform: scale(0.9);
+    transition: all .5s;
+}
+
+#section-outros .cards-section-outros .card-outros .card-description-outros {
+    width: 100%;
+    margin-left: 5px;
+    display: grid;
+    grid-template-areas: "sabor sabor"
+                         "ingre valor";
+}
+
+#section-outros .cards-section-outros .card-outros .card-description-outros .span-sabor-section-outros {
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: sabor;
+    height: 30px;
+} 
+
+#section-outros .cards-section-outros .card-outros .card-description-outros .span-ingrediente-section-outros {
+    color: #6b6b6b;
+    font-size: 12px;
+    grid-area: ingre;
+    max-width: 186px;
+    
+} 
+
+#section-outros .cards-section-outros .card-outros .card-description-outros .span-valor-section-outros {
+    grid-area: valor;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+#section04 {
+    background: linear-gradient(270deg, rgba(255,182,193,1) 0%, rgba(240,128,128,1) 55%);
+}
+
+#section-bebidas {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 70px 0px 70px 0px;
+}
+
+#section-bebidas .title-section-bebidas .h1-title-section-bebidas {
+    padding: 10px 0 5px 0;
+    font-size: 2.2rem;
+    position: relative;
+    margin-left: 10px;
+}
+
+#section-bebidas .title-section-bebidas .h1-title-section-bebidas::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid #fff;
+    border-radius: 5px;
+    width: 147px;
+    top: 54px;
+}
+
+#section-bebidas .cards-section-bebidas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 16px;
+}
+
+#section-bebidas .cards-section-bebidas .card-bebidas {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    transition: all .5s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; /* 69 */
+}
+
+#section-bebidas .cards-section-bebidas .card-bebidas img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+#section-bebidas .cards-section-bebidas .card-bebidas:hover img {
+    transform: scale(0.9);
+    transition: all .5s;
+}
+
+#section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas {
+    width: 100%;
+    margin-left: 5px;
+    display: grid;
+    grid-template-areas: "sabor sabor"
+                         "ingre valor";
+}
+
+#section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-sabor-section-bebidas {
+    font-size: 20px;
+    font-weight: bold;
+    grid-area: sabor;
+    height: 30px;
+} 
+
+#section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-ingrediente-section-bebidas {
+    color: #6b6b6b;
+    font-size: 12px;
+    grid-area: ingre;
+    max-width: 186px;
+} 
+
+#section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-valor-section-bebidas {
+    grid-area: valor;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -440,6 +611,8 @@ header {
         color: #8B4513;
     }
 
+    /* SECTION 01 */
+
     #section-brigadeiros .cards-section-brigadeiros {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -466,6 +639,8 @@ header {
         transform: scale(0.8);
     }
 
+    /* SECTION 02 */
+
     #section-trufas .cards-section-trufas {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -490,6 +665,56 @@ header {
     }
 
     #section-trufas .cards-section-trufas .card-trufas .card-description-trufas .span-valor-section-trufas {
+        margin-right: 10px;
+    }
+
+    /* SECTION 03 */
+
+    #section-outros .cards-section-outros {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-outros .cards-section-outros .card-outros {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    #section-outros .cards-section-outros .card-outros .card-description-outros {
+        display: grid;
+        grid-template-areas: "sabor"
+                             "ingre"
+                             "valor";
+    }
+
+    /* SECTION 04 */
+
+    #section-bebidas .cards-section-bebidas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #section-bebidas .cards-section-bebidas .card-bebidas img {
+        width: 65%;
+        max-width: 330px;
+        height: 330px;
+    }
+
+    #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas {
+        width: 100%;
+        margin-left: 5px;
+        display: grid;
+        grid-template-areas: "sabor"
+                             "ingre"
+                             "valor";
+    }
+
+    #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-sabor-section-bebidas {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-valor-section-bebidas {
         margin-right: 10px;
     }
 } 
