@@ -695,6 +695,10 @@ header {
         max-height: 350px;
     }
 
+    #section-bebidas .cards-section-bebidas .card-bebidas {
+        height: 350px;
+    }
+
     #section-bebidas .cards-section-bebidas .card-bebidas img {
         width: 65%;
         max-width: 330px;
