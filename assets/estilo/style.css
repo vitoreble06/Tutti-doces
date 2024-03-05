@@ -692,17 +692,20 @@ header {
     #section-bebidas .cards-section-bebidas {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        max-height: 350px;
-    }
-
-    #section-bebidas .cards-section-bebidas .card-bebidas {
-        height: 500px;
     }
 
     #section-bebidas .cards-section-bebidas .card-bebidas img {
         width: 65%;
         max-width: 330px;
         height: 330px;
+    }
+
+    #section-bebidas .cards-section-bebidas .card-bebidas .card-bebidas-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 220px;
     }
 
     #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas {
