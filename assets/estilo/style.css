@@ -692,6 +692,7 @@ header {
     #section-bebidas .cards-section-bebidas {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        max-height: 350px;
     }
 
     #section-bebidas .cards-section-bebidas .card-bebidas img {
