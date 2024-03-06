@@ -389,21 +389,29 @@ header {
 
 #section-outros .cards-section-outros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 483px);
     gap: 24px;
     padding: 16px;
 }
 
+
+
 #section-outros .cards-section-outros .card-outros {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     gap: 5px;
     background-color: #fff;
-    height: 150px;
     padding: 10px;
     transition: all .5s;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
+
+.card-img img {
+    width: 100%;
+}
+
+
 
 #section-outros .cards-section-outros .card-outros:hover img {
     transform: scale(0.9);
@@ -413,9 +421,8 @@ header {
 #section-outros .cards-section-outros .card-outros .card-description-outros {
     width: 100%;
     margin-left: 5px;
-    display: grid;
-    grid-template-areas: "sabor sabor"
-                         "ingre valor";
+    flex-direction: column;
+    margin-top: auto;
 }
 
 #section-outros .cards-section-outros .card-outros .card-description-outros .span-sabor-section-outros {
@@ -485,7 +492,6 @@ header {
     gap: 10px;
     background-color: #fff;
     padding: 10px;
-    height: 330px;
     transition: all .5s;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; /* 69 */
 }
@@ -508,9 +514,14 @@ header {
 #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas {
     width: 100%;
     margin-left: 5px;
-    display: grid;
-    grid-template-areas: "sabor sabor"
-                         "ingre valor";
+    display: flex;
+    flex-direction: column;
+}
+
+#section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas-linha02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-sabor-section-bebidas {
@@ -543,9 +554,7 @@ header {
     }
 
     img {
-        transform: scale(.6);
         width: 140px;
-        /* width: 0%; */
     }
 
     .menu {
@@ -555,8 +564,6 @@ header {
         top: 82px;
         left: 0;
         background: linear-gradient(270deg, rgba(255,182,193,1) 0%, rgba(240,128,128,1) 55%);
-        /* background-color: transparent; */
-        /* backdrop-filter: blur(17px); */
         width: 100%;
         padding: 30px 10px 30px 10px;
     }
@@ -679,7 +686,6 @@ header {
     }
 
     #section-outros .cards-section-outros .card-outros {
-        height: 150px;
         margin-bottom: 15px;
     }
 
@@ -705,10 +711,6 @@ header {
     #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas {
         width: 100%;
         margin-left: 5px;
-        display: grid;
-        grid-template-areas: "sabor"
-                             "ingre"
-                             "valor";
     }
 
     #section-bebidas .cards-section-bebidas .card-bebidas .card-description-bebidas .span-sabor-section-bebidas {
